@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    place-items: center;
+}
+
+.app_bar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.app_img {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 25%;
+    padding: 5px;
+    transition: width 0.15s ease-out, height 0.15s ease-out, padding 0.2s ease-out;
+}
+
+.app_img:hover {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.app_img:hover + .app_img, .app_img:has(+ .app_img:hover) {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+}
+
+.app_img:hover + .app_img + .app_img, .app_img:has(+ .app_img + .app_img:hover){
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+}

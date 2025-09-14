@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style_3.css">
+    <title>Форма регистрации</title>
+</head>
+<body>
+    <div class="form_cont">
+        <h1>Форма регистрации</h1>
+        <form action="" class="registration_form">
+            <main class="main_info">
+                <div class="input_box">
+                    <label for="user_name">Введите имя:</label>
+                    <input type="text" name="user_name" placeholder="Иванов Иван" required id="user_name">
+                </div>
+
+                <div class="input_box">
+                    <label for="user_email">Введите почту:</label>
+                    <input type="email" name="user_email" placeholder="ivanovIvan@ivanovich.com" id="user_email">
+                </div>
+
+                <div class="input_box">
+                    <label for="user_password">Введите пароль:</label>
+                    <input type="password" name="user_password" placeholder="Ваш пароль" id="user_password">
+                </div>
+
+            </main>
+            <nav class="user_agreements">
+                <label for="eula">
+                    <a href="assets/other/EULA.txt" class="agreements_link" download>Прочитать соглашение</a>
+                </label>
+                <input type="checkbox" name="eula_check" required id="eula">
+            </nav>
+            <footer>
+                <input type="submit" value="Зарегистрироваться">
+            </footer>
+        </form>
+    </div>
+
+</body>
+</html>

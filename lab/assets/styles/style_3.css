@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: rgb(138, 138, 255);
+}
+
+h1 {
+    margin-bottom: 20px;
+    place-self: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    place-items: center;
+}
+
+.form_cont {
+    border-width: 5px;
+    border-style: solid;
+    padding: 20px;
+    background-color: rgb(223, 243, 252);
+}
+
+.main_info {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-auto-rows: 50px;
+}
+
+label {
+    font-size: large;
+    font-weight: 900;
+    text-align:right;
+    padding-right: 20px;
+    place-content: center;
+}
+
+.input_box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2vw;
+}
+
+footer {
+    margin-top: 15px;
+    place-self: center;
+}
+
+.user_agreements {
+    place-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+a:active {
+    color: black;
+}
+
+
+
+
+
