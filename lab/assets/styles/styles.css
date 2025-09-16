@@ -6,10 +6,10 @@
 
 h1 {
     display: block;
+    width: 100%;
     text-align: center;
     color: white;
-    background-color: black;
-    width: 1fr;
+    background-color: rgb(46, 0, 133);
 }
 
 body {
@@ -20,41 +20,38 @@ body {
     grid-template-rows: 1fr 1fr;
     place-content: center;
     place-items: center;
+    gap: 10px;
 }
 
 .container {
     border: solid 5px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     width: 90%;
-    height: 1fr;
 }
 
 .content {
     width: 1fr;
-    display: grid;
-    grid-template-rows: 1fr 2fr 7fr 20px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 300px;
+    gap: 10px;
 }
 
 .description {
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
     font-style:italic;
     color: rgb(72, 4, 189);
 }
 
 .house-image {
-    width: 300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
     object-fit: fill;
     border-radius: 20%;
     border-color: black;
 }
 
-.image_container {
-    display: grid;
-    place-items: center;
-}
